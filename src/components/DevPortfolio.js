@@ -1,55 +1,35 @@
 import React from 'react'
+import PortfolioItem from './PortfolioItem'
+
 
 const DevPortfolio = () => {
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 justify-center box-border w-full gap-8 p-8'>
+    <div className='flex flex-col md:flex-row md:flex-wrap justify-start box-border w-full gap-8 p-8'>
 
-      <div className="card shrink w-auto bg-base-100 shadow-xl image-full">
-        <figure><img src="https://picsum.photos/640/480" alt="Shoes" /></figure>
-        <div className="card-body">
-          <h2 className="card-title">Shoes!</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">View</button>
-          </div>
-        </div>
-      </div>
+      <PortfolioItem
+        imageUrl="https://picsum.photos/500/350"
+        title="Tarot App"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        tags={["React", "Tailwind"]}
+        link="#"
+      />
 
-      <div className="card shrink w-auto bg-base-100 shadow-xl image-full">
-        <figure><img src="https://picsum.photos/600/400" alt="Shoes" /></figure>
-        <div className="card-body">
-          <h2 className="card-title">Shoes!</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">View</button>
-          </div>
-        </div>
-      </div>
+      <PortfolioItem
+        imageUrl="https://picsum.photos/300/250"
+        title="Tarot App"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        tags={["React", "Tailwind"]}
+        link="#"
+      />
 
-      <div className="card shrink w-auto bg-base-100 shadow-xl image-full">
-        <figure><img src="https://picsum.photos/640/400" alt="Shoes" /></figure>
-        <div className="card-body">
-          <h2 className="card-title">Shoes!</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">View</button>
-          </div>
-        </div>
-      </div>
+      <PortfolioItem
+        imageUrl="https://picsum.photos/600/350"
+        title="Tarot App"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        tags={["React", "Tailwind"]}
+        link="#"
+      />
 
-      <div className="card shrink w-auto bg-base-100 shadow-xl image-full">
-        <figure><img src="https://picsum.photos/600/480" alt="Shoes" /></figure>
-        <div className="card-body">
-          <h2 className="card-title">Shoes!</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">View</button>
-          </div>
-        </div>
-      </div>
-
-
-      
     </div>
   )
 }

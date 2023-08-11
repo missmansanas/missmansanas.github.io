@@ -10,8 +10,7 @@ const MiniNav = () => {
       h-auto hidden md:block
       w-1/2 lg:w-full">
       <div className="flex bg-base-200/50 gap-8
-      flex-row justify-start items-start
-      ">
+      flex-row justify-start items-start">
       <ul className="menu bg-transparent w-full rounded-box">
         <li><a href='https://threads.net/@missmansanas' target='_blank'>
           <AlternateEmailIcon/> Threads
