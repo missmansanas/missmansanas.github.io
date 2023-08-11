@@ -10,7 +10,7 @@ const ProfileCard = () => {
       lg:flex-col lg:justify-center lg:items-center
       ">
         <div className="avatar online">
-          <div className="w-16 lg:w-36 rounded-full">
+          <div className="w-16 lg:w-24 rounded-full">
             <img src="https://picsum.photos/200/300" />
           </div>
         </div>
