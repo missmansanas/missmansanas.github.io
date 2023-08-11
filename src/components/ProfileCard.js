@@ -14,7 +14,7 @@ const ProfileCard = () => {
             <img src="https://picsum.photos/200/300" />
           </div>
         </div>
-        <p>Hi, I'm Apple / Paola! I'm a creator from Manila, Philippines.</p>
+        <p>Hi, there! You can call me Apple or Paola. I'm a creator from Manila, Philippines.</p>
 
       </div>
     </div>

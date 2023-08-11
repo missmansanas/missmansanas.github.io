@@ -1,10 +1,13 @@
-import React from 'react'
+import React from 'react';
+import PaletteIcon from '@mui/icons-material/Palette';
 
 const ThemeChanger = ({ setTheme }) => {
 
   return (
-    <div className="dropdown dropdown-hover">
-      <label tabIndex={0} className="btn m-1">Change Theme</label>
+    <div className="dropdown dropdown-end">
+      <label tabIndex={0} className="btn btn-ghost m-1">
+        <PaletteIcon/>
+      </label>
       <ul tabIndex={0} className="dropdown-content z-[999] menu p-2 shadow-xl bg-base-100/90 rounded-box w-52 border">
         <li><a onClick={() => setTheme('autumn')}>🌞 Apple Reds</a></li>
         <li><a onClick={() => setTheme('pastel')}>🌞 Pinterest Girl</a></li>

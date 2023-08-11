@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import DesktopNav from './components/MiniNav';
 import ProfileCard from './components/ProfileCard';
 import DevPortfolio from './components/DevPortfolio';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   const [theme, setTheme] = useState('autumn');
@@ -14,6 +15,8 @@ function App() {
   }, [theme]);
 
   return (
+  <BrowserRouter>
+  
     <div className="App h-[100vh]
       flex p-4 gap-4 justify-start 
       flex-col items-center
@@ -28,15 +31,18 @@ function App() {
         <div className="mockup-browser-toolbar flex flex-row">
           <div className="input border border-base-300">https://missmansanas.com</div>
         </div>
-          <BrowserNav setTheme={setTheme} />
+        <BrowserNav setTheme={setTheme} />
         <div className="flex flex-col justify-start bg-base-200/50 h-full w-full box-border overflow-y-auto">
-
-          {/* <Hero/> */}
-          {/* <DevPortfolio/> */}
+          <Routes>
+            <Route index path="/" element={ <Hero/> } /> 
+            <Route path="/portfolio" element={ <DevPortfolio/> } />
+          </Routes>
         </div>
 
       </div>
     </div>
+
+  </BrowserRouter>
   );
 }
 
