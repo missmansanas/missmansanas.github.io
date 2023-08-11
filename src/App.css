@@ -1,8 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.App {
-  /* height: 90vh; */
-  box-sizing: border-box;
-}
