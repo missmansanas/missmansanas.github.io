@@ -4,5 +4,26 @@
 
 .App {
   background: hsl(var(--b1));
-  background: linear-gradient(115deg, hsl(var(--b1)) 0%, hsl(var(--s)) 100%);
+  background: linear-gradient(115deg, hsl(var(--nc)) 0%, hsl(var(--s)) 100%);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: hsl(var(--pc));
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--a));
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--af));
 }

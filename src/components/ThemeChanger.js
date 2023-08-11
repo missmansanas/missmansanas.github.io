@@ -5,7 +5,7 @@ const ThemeChanger = ({ setTheme }) => {
   return (
     <div className="dropdown dropdown-hover">
       <label tabIndex={0} className="btn m-1">Change Theme</label>
-      <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow-xl bg-base-10050 rounded-box w-52 border">
+      <ul tabIndex={0} className="dropdown-content z-[999] menu p-2 shadow-xl bg-base-100/90 rounded-box w-52 border">
         <li><a onClick={() => setTheme('autumn')}>🌞 Apple Reds</a></li>
         <li><a onClick={() => setTheme('pastel')}>🌞 Pinterest Girl</a></li>
         <li><a onClick={() => setTheme('bumblebee')}>🌞 Sunny Day</a></li>
