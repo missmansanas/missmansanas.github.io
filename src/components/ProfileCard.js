@@ -2,10 +2,10 @@ import React from 'react'
 
 const ProfileCard = () => {
   return (
-    <div className="mockup-window border bg-base-300 shadow-md
+    <div className="mockup-window border bg-base-300/50 shadow-md
       w-full h-auto
       md:w-full">
-      <div className="flex px-8 py-8 bg-base-200 gap-8
+      <div className="flex px-8 py-8 bg-base-200/50 gap-8
       flex-row justify-start items-start
       lg:flex-col lg:justify-center lg:items-center
       ">
@@ -14,9 +14,11 @@ const ProfileCard = () => {
             <img src="https://picsum.photos/200/300" />
           </div>
         </div>
-        <p>Hellooooo</p>
+        <p>Hi, I'm Apple / Paola! I'm a creator from Manila, Philippines.</p>
+
       </div>
     </div>
+
   )
 }
 

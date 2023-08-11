@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.App {
+  background: hsl(var(--b1));
+  background: linear-gradient(115deg, hsl(var(--b1)) 0%, hsl(var(--s)) 100%);
+}

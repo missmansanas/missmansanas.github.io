@@ -23,11 +23,11 @@ function App() {
       </div>
 
 
-      <div className="mockup-browser bg-base-200 border h-full box-border w-full shadow-md flex flex-col">
+      <div className="mockup-browser bg-base-200/50 border h-full box-border w-full shadow-md flex flex-col">
         <div className="mockup-browser-toolbar flex flex-row">
           <div className="input border border-base-300">https://missmansanas.com</div>
         </div>
-        <div className="flex flex-col justify-start bg-base-200 h-full overflow-y-auto">
+        <div className="flex flex-col justify-start bg-base-200/50 h-full overflow-y-auto">
 
           <BrowserNav setTheme={setTheme} />
           {/* <Hero/> */}
