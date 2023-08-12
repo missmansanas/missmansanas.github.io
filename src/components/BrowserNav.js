@@ -11,9 +11,9 @@ const BrowserNav = ({ setTheme }) => {
           <MenuIcon/>
         </label>
         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[999] p-2 shadow bg-base-100/90 rounded-box w-52">
-          <li><a href='/'>Homepage</a></li>
+          {/* <li><a href='/'>Homepage</a></li>
           <li><a href='/portfolio'>Portfolio</a></li>
-          <li><a>About</a></li>
+          <li><a>About</a></li> */}
         </ul>
       </div>
     </div>
