@@ -2,7 +2,7 @@ import './App.css';
 import { useEffect, useState } from 'react';
 import BrowserNav from './components/BrowserNav';
 import Hero from './components/Hero';
-import DesktopNav from './components/MiniNav';
+import DesktopNav from './components/DesktopNav';
 import ProfileCard from './components/ProfileCard';
 import DevPortfolio from './components/DevPortfolio';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -17,11 +17,10 @@ function App() {
   return (
   <BrowserRouter>
   
-    <div className="App h-[100vh]
-      flex p-4 gap-4 justify-start 
+    <div className="App h-[100vh] flex p-4 gap-4 justify-start selection:bg-accent selection:text-accent-content
       flex-col items-center
       lg:flex-row-reverse lg:items-start">
-      <div className='flex flex-row lg:flex-col gap-4 w-full lg:w-[400px] items-center'>
+      <div className='flex flex-row lg:flex-col gap-4 w-full lg:w-[500px] items-center'>
         <ProfileCard/>
         <DesktopNav/>
       </div>
