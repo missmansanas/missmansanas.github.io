@@ -2,19 +2,20 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      cursor: {
+        'galaxy': `url('./assets/cursor.cur'), pointer`,
+      }
+    },
   },
   plugins: [require("daisyui")],
   daisyui: {
     themes: [
       "autumn",
-      "bumblebee",
       "fantasy",
       "lofi",
-      "luxury",
-      "dracula",
       "black",
-      "pastel"
+      "dracula",
     ]
   }
 }
