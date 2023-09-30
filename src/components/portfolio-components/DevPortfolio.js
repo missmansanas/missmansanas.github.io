@@ -42,6 +42,7 @@ const DevPortfolio = ({ theme }) => {
         "React (CRA)",
         "TailwindCSS",
         "Framer Motion",
+        "React-Router-DOM",
       ],
       link: "https://missmansanas.github.io/tarot-reading",
     },
@@ -59,6 +60,17 @@ const DevPortfolio = ({ theme }) => {
       link: "https://missmansanas.github.io/chat-dapp",
     },
     {
+      image: require(`../../assets/images/productivity-app.png`),
+      title: "To-do List + Pomodoro App",
+      description: "Introducing the ultimate productivity assistant: a to-do list + pomodoro web app! Stay organized and focused with ease.",
+      tags: [
+        "React (Vite)",
+        "TailwindCSS",
+        "React-Router-DOM",
+      ],
+      link: "https://missmansanas.github.io/productivity-app",
+    },
+    {
       image: require(`../../assets/images/portfolio.png`),
       title: "Portfolio Website",
       description: "You're currently here!",
@@ -67,6 +79,7 @@ const DevPortfolio = ({ theme }) => {
         "TailwindCSS",
         "DaisyUI",
         "Framer Motion",
+        "React-Router-DOM",
       ],
       link: "/",
     },
