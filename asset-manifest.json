@@ -1,20 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.ed15d9e4.css",
-    "main.js": "/static/js/main.5a31d64d.js",
+    "main.css": "/static/css/main.3ab8cfea.css",
+    "main.js": "/static/js/main.8168be1f.js",
+    "static/media/portrait.png": "/static/media/portrait.7f426ee6fd5a75cd89ad.png",
     "static/media/tarot-app.png": "/static/media/tarot-app.b61507fae1671936825b.png",
-    "static/media/display-picture.jpeg": "/static/media/display-picture.3ed13112698edd7cc441.jpeg",
     "static/media/portfolio.png": "/static/media/portfolio.69663b58f80d20ff5926.png",
     "static/media/Milchella-Regular.ttf": "/static/media/Milchella-Regular.d2665151b0d9f53707d7.ttf",
-    "static/media/portrait.jpg": "/static/media/portrait.feecdaa7c628f1553a2a.jpg",
     "static/media/chat-dapp.png": "/static/media/chat-dapp.1533fd27fe2eef723e7c.png",
     "static/media/productivity-app.png": "/static/media/productivity-app.09aaeca7131423cdbcd6.png",
     "index.html": "/index.html",
-    "main.ed15d9e4.css.map": "/static/css/main.ed15d9e4.css.map",
-    "main.5a31d64d.js.map": "/static/js/main.5a31d64d.js.map"
+    "main.3ab8cfea.css.map": "/static/css/main.3ab8cfea.css.map",
+    "main.8168be1f.js.map": "/static/js/main.8168be1f.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed15d9e4.css",
-    "static/js/main.5a31d64d.js"
+    "static/css/main.3ab8cfea.css",
+    "static/js/main.8168be1f.js"
   ]
 }
