@@ -5,7 +5,6 @@ import DesktopNav from './components/desktop-components/DesktopNav';
 import ProfileCard from './components/desktop-components/ProfileCard';
 import DevPortfolio from './components/portfolio-components/DevPortfolio';
 import AboutPage from './components/about-components/AboutPage';
-import ThemeChanger from './components/desktop-components/ThemeChanger';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {

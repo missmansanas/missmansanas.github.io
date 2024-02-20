@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
@@ -14,11 +14,14 @@ const TechStack = () => {
     { name: 'HTML/CSS', value: '9.5', proficiency: 'high'},
     { name: 'JavaScript', value: '8.5', proficiency: 'high'},
     { name: 'Git/GitHub', value: '8', proficiency: 'high'},
-    { name: 'Bootstrap', value: '7', proficiency: 'high'},
-    { name: 'React/CRA', value: '6', proficiency: 'moderate'},
-    { name: 'Tailwind', value: '6', proficiency: 'moderate'},
-    { name: 'Solidity', value: '6', proficiency: 'moderate'},
-    { name: 'Nextjs', value: '3.33', proficiency: 'in progress'},
+    { name: 'React.JS', value: '7', proficiency: 'high'},
+    { name: 'Tailwind', value: '7', proficiency: 'high'},
+    { name: 'Bootstrap', value: '6', proficiency: 'moderate'},
+    { name: 'Next.JS', value: '5', proficiency: 'beginner'},
+    { name: 'Express.JS', value: '4', proficiency: 'beginner'},
+    { name: 'Node.JS', value: '4', proficiency: 'beginner'},
+    { name: 'MongoDB', value: '4', proficiency: 'beginner'},
+    
   ];
 
   return (
@@ -43,7 +46,7 @@ const TechStack = () => {
               {skill.name} <span className='text-base-content/50 text-xs'>({skill.proficiency})</span>
             </label>
             <motion.progress
-              className={`progress col-span-1 lg:col-span-2 w-full ${skill?.value > 6 ? 'progress-success' : 'progress-info' }`}
+              className={`progress col-span-1 lg:col-span-2 w-full ${skill?.value >= 6 ? 'progress-success' : 'progress-info' }`}
               value={skill.value}
               max="10"
               animate={{ width: open ? "100%" : "0" }}
@@ -53,7 +56,7 @@ const TechStack = () => {
             </>
           )
         })}
-        <p className="text-xs mt-5 col-span-2">Hint: The values are arbitrary 😉</p>
+        <p className="text-xs mt-5 col-span-2 lg:col-span-3">Disclaimer: Progress bar for illustration purposes only 😉</p>
       </motion.div>
     </motion.fieldset>
   )

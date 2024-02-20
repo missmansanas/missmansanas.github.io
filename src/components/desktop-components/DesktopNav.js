@@ -5,7 +5,7 @@ import MapOutlinedIcon from '@mui/icons-material/MapOutlined';
 import DesktopWindowsTwoToneIcon from '@mui/icons-material/DesktopWindowsTwoTone';
 import AutoAwesomeTwoToneIcon from '@mui/icons-material/AutoAwesomeTwoTone';
 import Face3TwoToneIcon from '@mui/icons-material/Face3TwoTone';
-import LockTwoToneIcon from '@mui/icons-material/LockTwoTone';
+// import LockTwoToneIcon from '@mui/icons-material/LockTwoTone';
 import ThemeChanger from './ThemeChanger';
 
 const DesktopNav = ({setTheme, theme}) => {
@@ -33,27 +33,27 @@ const DesktopNav = ({setTheme, theme}) => {
         </span>
       </div>
       
-      <ul tabIndex={0} className={open? "grid grid-cols-6 md:grid-cols-4 py-7 gap-y-6 place-content-center rounded-b-xl bg-base-200/50 w-full" : "hidden"}>
+      <ul tabIndex={0} className={open? "grid grid-cols-6 md:grid-cols-4 p-5 gap-y-6 place-content-center rounded-b-xl bg-base-200/50 w-full" : "hidden"}>
           <li className='text-center'>
-            <Link to='/'><DesktopWindowsTwoToneIcon style={theme !== "black" ? {fontSize: "3rem", color: "hsl(var(--p))"} : {fontSize: "3rem", color: "hsl(var(--pc))"}} /></Link>
-            <p className='text-xs pt-1'>Home</p>
+            <Link to='/'><DesktopWindowsTwoToneIcon style={theme !== "black" ? {fontSize: "2rem", color: "hsl(var(--p))"} : {fontSize: "2rem", color: "hsl(var(--pc))"}} /></Link>
+            <p className='text-xs pt-2'>Home</p>
           </li>
           <li className='text-center'>
-            <Link to='/portfolio'><AutoAwesomeTwoToneIcon style={theme !== "black" ? {fontSize: "3rem", color: "hsl(var(--p))"} : {fontSize: "3rem", color: "hsl(var(--pc))"}} /></Link>
-            <p className='text-xs pt-1'>Portfolio</p>
+            <Link to='/portfolio'><AutoAwesomeTwoToneIcon style={theme !== "black" ? {fontSize: "2rem", color: "hsl(var(--p))"} : {fontSize: "2rem", color: "hsl(var(--pc))"}} /></Link>
+            <p className='text-xs pt-2'>Portfolio</p>
           </li>
           <li className='text-center'>
-            <Link to='/about'><Face3TwoToneIcon style={theme !== "black" ? {fontSize: "3rem", color: "hsl(var(--p))"} : {fontSize: "3rem", color: "hsl(var(--pc))"}} /></Link>
-            <p className='text-xs pt-1'>About</p>
+            <Link to='/about'><Face3TwoToneIcon style={theme !== "black" ? {fontSize: "2rem", color: "hsl(var(--p))"} : {fontSize: "2rem", color: "hsl(var(--pc))"}} /></Link>
+            <p className='text-xs pt-2'>About</p>
+          </li>
+          {/* <li className='text-center'>
+            <Link to='#'><LockTwoToneIcon style={theme !== "black" ? {fontSize: "2rem", color: "hsl(var(--p))"} : {fontSize: "2rem", color: "hsl(var(--pc))"}} /></Link>
+            <p className='text-xs pt-2'>Coming Soon</p>
           </li>
           <li className='text-center'>
-            <Link to='#'><LockTwoToneIcon style={theme !== "black" ? {fontSize: "3rem", color: "hsl(var(--p))"} : {fontSize: "3rem", color: "hsl(var(--pc))"}} /></Link>
-            <p className='text-xs pt-1'>Coming Soon</p>
-          </li>
-          <li className='text-center'>
-            <Link to='#'><LockTwoToneIcon style={theme !== "black" ? {fontSize: "3rem", color: "hsl(var(--p))"} : {fontSize: "3rem", color: "hsl(var(--pc))"}} /></Link>
-            <p className='text-xs pt-1'>Coming Soon</p>
-          </li>
+            <Link to='#'><LockTwoToneIcon style={theme !== "black" ? {fontSize: "2rem", color: "hsl(var(--p))"} : {fontSize: "2rem", color: "hsl(var(--pc))"}} /></Link>
+            <p className='text-xs pt-2'>Coming Soon</p>
+          </li> */}
           <li className='text-center'>
             <ThemeChanger setTheme={setTheme} theme={theme} />
           </li>

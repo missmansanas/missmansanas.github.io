@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import FeedOutlinedIcon from '@mui/icons-material/FeedOutlined';
+// import InstagramIcon from '@mui/icons-material/Instagram';
+// import FeedOutlinedIcon from '@mui/icons-material/FeedOutlined';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
@@ -37,7 +37,7 @@ const ProfileCard = ({theme}) => {
           {/* Avatar - takes up 1/3 col */}
             <div className="avatar online w-20 h-20 col-span-1 justify-self-center p-1">
               <div className={`w-full h-full rounded-full ring ${theme !== "black" ? "ring-secondary" : 'ring-white/70'} ring-offset-base-100/50 ring-offset-2`}>
-                <img src={require('../../assets/images/portrait.jpg')} className='opacity-70'/>
+                <img src={require('../../assets/images/portrait.png')} className='opacity-70' alt='Portrait of Paola'/>
               </div>
             </div>
 
@@ -87,13 +87,13 @@ const ProfileCard = ({theme}) => {
         <div className="bg-transparent rounded-box gap-4 text-xs justify-between items-center w-full 
         flex flex-row
         lg:grid lg:grid-cols-3 ">
-          <a href='https://threads.net/@missmansanas' target='_blank'>
+          <a href='https://threads.net/@missmansanas'>
             <AlternateEmailIcon/><span className="hidden lg:inline"> Threads</span>
           </a>
-          <a href='https://github.com/missmansanas' target='_blank'>
+          <a href='https://github.com/missmansanas'>
             <GitHubIcon/><span className="hidden lg:inline"> GitHub</span>
           </a>
-          <a href="mailto:paolanocom@gmail.com" target='_blank'>
+          <a href="mailto:paolanocom@gmail.com">
             <EmailOutlinedIcon/><span className="hidden lg:inline"> Email</span>
           </a>
         </div>

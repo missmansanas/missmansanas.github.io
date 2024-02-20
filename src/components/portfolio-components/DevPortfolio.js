@@ -1,6 +1,6 @@
 import React from 'react'
 import PortfolioItem from './PortfolioItem'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 
 const DevPortfolio = ({ theme }) => {
@@ -89,7 +89,7 @@ const DevPortfolio = ({ theme }) => {
     <>
     {portfolioItems && 
       <motion.div
-        className='flex flex-wrap flex-row justify-center flex-wrap box-border w-full gap-8 p-8'
+        className='grid grid-cols-2 justify-center flex-wrap box-border w-full gap-8 p-8'
         variants={parent}
         animate="visible"
         initial="hidden"

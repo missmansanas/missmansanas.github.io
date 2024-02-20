@@ -1,4 +1,5 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
@@ -26,11 +27,12 @@ const Hero = () => {
           <p className="py-8 text-xl md:text-2xl">
             <div>full-stack <span className='text-blue-500'>web developer</span> = <span className='text-orange-400'>{'{'}</span> </div>
               <div className='ml-8'>
-                I code beautiful, user-focused web experiences;<br/>
+                I code beautiful, user-focused web experiences <br/>
+                specializing in <span className='text-purple-500'>MERN stack</span>;
               </div>
             <div className='text-orange-400'>{'}'}</div>
           </p>
-          <Link to="/portfolio"><button className="btn btn-primary my-3">View portfolio</button></Link>
+          <Link to="/portfolio"><button className="btn btn-primary my-3 border-2 border-white">View portfolio <ArrowForwardIcon/> </button></Link>
         </div>
 
         {/* <motion.img src={require('../../assets/images/display-picture.jpeg')} alt=""
