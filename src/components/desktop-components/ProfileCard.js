@@ -6,7 +6,8 @@ import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import { motion } from 'framer-motion';
+import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
+// import { motion } from 'framer-motion';
 
 const ProfileCard = ({theme}) => {
   const [open, setOpen] = useState(true);
@@ -29,7 +30,7 @@ const ProfileCard = ({theme}) => {
       </div>
 
       {/* Body of the Profile Card */}
-      <div className={open? "flex py-4 px-6 bg-base-200/50 gap-6 text-sm flex-col justify-center items-start" : "hidden"}>
+      <div className={open? "flex py-4 px-6 bg-base-200/50 gap-4 text-sm flex-col justify-center items-start" : "hidden"}>
 
         {/* Profile Section */}
         <div className='grid grid-cols-3 gap-4 justify-center items-start w-full'>
@@ -51,30 +52,15 @@ const ProfileCard = ({theme}) => {
         </div>
 
         {/* Status Section */}
-        <motion.div className={`flex flex-row gap-2 py-1 text-md justify-center w-full rounded rounded-full
+        <div className={`flex flex-row gap-2 text-xs items-center w-full rounded rounded-full
           ${theme !== "black" ? 'text-secondary' : 'text-primary-content'}`}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3, delay: 1 }}
           >
-
-          <motion.svg xmlns="http://www.w3.org/2000/svg" className="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"
-            initial={{ scale: 1, rotate: 0 }}
-            animate={{
-              scale: [1, 1.5, 1.5, 1.5, 1],
-              rotate: [0, 0, 360, 0, 0 ], }}
-              transition={{
-                delay: 1.5,
-                duration: 3,
-                ease: "easeInOut",
-                repeat: Infinity,
-                repeatDelay: 15
-              }}>
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </motion.svg>
-
-          <span cl>Currently open to opportunities!</span>
-        </motion.div>
+          <CheckCircleOutlineIcon/>
+          <span>Open to opportunities!</span>
+        </div>
 
         {/* Stats Section
         <div className="flex flex-row justify-evenly items-center w-full">
@@ -88,13 +74,13 @@ const ProfileCard = ({theme}) => {
         flex flex-row
         lg:grid lg:grid-cols-3 ">
           <a href='https://threads.net/@missmansanas'>
-            <AlternateEmailIcon/><span className="hidden lg:inline"> Threads</span>
+            <AlternateEmailIcon/><span className="px-1 hidden lg:inline"> Threads</span>
           </a>
           <a href='https://github.com/missmansanas'>
-            <GitHubIcon/><span className="hidden lg:inline"> GitHub</span>
+            <GitHubIcon/><span className="px-1 hidden lg:inline"> GitHub</span>
           </a>
           <a href="mailto:paolanocom@gmail.com">
-            <EmailOutlinedIcon/><span className="hidden lg:inline"> Email</span>
+            <EmailOutlinedIcon/><span className="px-1 hidden lg:inline"> Email</span>
           </a>
         </div>
       </div>

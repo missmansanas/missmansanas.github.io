@@ -47,6 +47,17 @@ const DevPortfolio = ({ theme }) => {
       link: "https://missmansanas.github.io/tarot-reading",
     },
     {
+      image: require(`../../assets/images/productivity-app.png`),
+      title: "To-do List + Pomodoro App",
+      description: "Introducing the ultimate productivity assistant: a to-do list + pomodoro web app! Stay organized and focused with ease.",
+      tags: [
+        "React (Vite)",
+        "TailwindCSS",
+        "React-Router-DOM",
+      ],
+      link: "https://missmansanas.github.io/productivity-app",
+    },
+    {
       image: require(`../../assets/images/chat-dapp.png`),
       title: "Simple Decentralized Chat App",
       description: "Experience the future of chatting with our prototype decentralized app, blending Solidity magic and ethers.js for secure, peer-to-peer conversations. MetaMask wallet and Mumbai Testnetwork required to test.",
@@ -58,17 +69,6 @@ const DevPortfolio = ({ theme }) => {
         "EthersJS",
       ],
       link: "https://missmansanas.github.io/chat-dapp",
-    },
-    {
-      image: require(`../../assets/images/productivity-app.png`),
-      title: "To-do List + Pomodoro App",
-      description: "Introducing the ultimate productivity assistant: a to-do list + pomodoro web app! Stay organized and focused with ease.",
-      tags: [
-        "React (Vite)",
-        "TailwindCSS",
-        "React-Router-DOM",
-      ],
-      link: "https://missmansanas.github.io/productivity-app",
     },
     {
       image: require(`../../assets/images/portfolio.png`),

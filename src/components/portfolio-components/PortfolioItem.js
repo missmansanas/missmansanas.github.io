@@ -1,10 +1,10 @@
 import React from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const PortfolioItem = ({key, imageUrl, title, tags, description, link, variants, theme}) => {
 
   return (
-    <motion.div className="card shrink p-2 max-w-md box-border glass shadow-xl"
+    <motion.div className="card shrink p-2 bg-white/30 max-w-md box-border shadow-xl"
       key={key}
       variants={variants}
       >
