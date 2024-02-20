@@ -4,12 +4,12 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
 
-  const greeting = "Hi, I'm Paola!";
+  const greeting = "// Hi, I'm Paola!";
 
   return (
-    <div className="h-full flex flex-col p-8 w-full box-border">
-        <div className="z-10 md:mt-10">
-          <h1 className="text-5xl md:text-8xl milchella">
+    <div className="h-full flex flex-col p-8 w-full box-border justify-center">
+        <div className="z-10 md:mt-10 font-mono">
+          <h1 className="text-lime-600 text-3xl md:text-4xl">
             {greeting.split('').map((letter, i) => {
               return (
                 <motion.span
@@ -23,14 +23,17 @@ const Hero = () => {
               )
             })}
           </h1>
-          <p className="py-3 text-2xl md:leading-normal md:text-3xl max-w-3xl">
-            I love creating things online.
-            A reformed marketing gal, I've pivoted from making eloquent, user-focused copy to making beautiful, user-friendly websites!
+          <p className="py-8 text-xl md:text-2xl">
+            <div>full-stack <span className='text-blue-500'>web developer</span> = <span className='text-orange-400'>{'{'}</span> </div>
+              <div className='ml-8'>
+                I code beautiful, user-focused web experiences;<br/>
+              </div>
+            <div className='text-orange-400'>{'}'}</div>
           </p>
           <Link to="/portfolio"><button className="btn btn-primary my-3">View portfolio</button></Link>
         </div>
 
-        <motion.img src={require('../../assets/images/display-picture.jpeg')} alt=""
+        {/* <motion.img src={require('../../assets/images/display-picture.jpeg')} alt=""
           className='mask mask-squircle opacity-50 absolute 
           h-[200px] -right-10 bottom-2
           md:h-60 md:bottom-8
@@ -39,7 +42,7 @@ const Hero = () => {
           animate={{ opacity: "50%",
           transition: { duration: 1 } }}
           whileHover={{ opacity: "75%" }}
-          />
+          /> */}
     </div>
   )
 }

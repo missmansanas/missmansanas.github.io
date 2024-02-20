@@ -90,12 +90,6 @@ const ProfileCard = ({theme}) => {
           <a href='https://threads.net/@missmansanas' target='_blank'>
             <AlternateEmailIcon/><span className="hidden lg:inline"> Threads</span>
           </a>
-          <a href='https://instagram.com/missmansanas' target='_blank'>
-            <InstagramIcon/><span className="hidden lg:inline"> Instagram</span>
-          </a>
-          <a href='https://missmansanas.substack.com' target='_blank'>
-            <FeedOutlinedIcon/><span className="hidden lg:inline"> Substack</span>
-          </a>
           <a href='https://github.com/missmansanas' target='_blank'>
             <GitHubIcon/><span className="hidden lg:inline"> GitHub</span>
           </a>

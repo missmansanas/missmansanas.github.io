@@ -9,7 +9,7 @@ import ThemeChanger from './components/desktop-components/ThemeChanger';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
-  const [theme, setTheme] = useState('autumn');
+  const [theme, setTheme] = useState('black');
 
   useEffect(() => {
     document.querySelector('html').setAttribute('data-theme', theme);
@@ -30,7 +30,7 @@ function App() {
       <div className="mockup-browser bg-base-200/50 border h-full box-border w-full shadow-md flex flex-col overflow-hidden">
         {/* Browser Toolbar */}
         <div className="mockup-browser-toolbar flex flex-row-reverse">
-            <div className="hidden md:input border border-base-300 text-base-content/60">https://missmansanas.com</div>
+            <div className="hidden md:input border border-base-300 text-base-content/60">https://missmansanas.github.io</div>
         </div>
         <div className="flex flex-col justify-start bg-base-200/50 h-full w-full box-border overflow-y-auto">
           <Routes>
