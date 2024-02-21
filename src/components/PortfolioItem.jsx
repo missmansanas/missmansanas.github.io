@@ -5,14 +5,14 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 const PortfolioItem = ({title, imageUrl, description, tags, link}) => {
   return (
     <div className='bg-zinc-100 py-4 px-8 flex flex-col gap-4 rounded'>
-      {/* <motion.img 
+      <motion.img 
         src={imageUrl}
         className='rounded opacity-70'
         alt={title}
         initial={{ opacity: "70%" }}
         whileHover={{ opacity: 100 }}
         transition={{ duration: 0.3 }}
-        /> */}
+        />
       <h2 className='text-3xl font-light tracking-wider italic'>{title}</h2>
 
       <div className='flex flex-row flex-wrap gap-2'>

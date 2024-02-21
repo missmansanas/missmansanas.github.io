@@ -40,11 +40,24 @@ const DevPortfolio = () => {
       ],
       link: "https://missmansanas.github.io/chat-dapp",
     },
+    {
+      image: 'assets/makoltaverse.png',
+      title: "Fictional Media Portal",
+      description: "Immerse in the universe of Makolta, the fictional setting of an upcoming literary and transmedia project.",
+      tags: [
+        "React (Vite)",
+        "NodeJs",
+        "ExpressJS",
+        "MongoDB",
+        "Vercel"
+      ],
+      link: "https://makolta.vercel.com",
+    },
 
   ]
 
   return (
-    <div className='grid grid-cols-3 gap-8 p-12'>
+    <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 p-12'>
     
       {portfolioItems &&
         portfolioItems.map((item, i) => {

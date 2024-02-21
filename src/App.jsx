@@ -16,22 +16,22 @@ function App() {
     >
       <Navbar/>
       <main className=''>
-        <div className='flex flex-col items-center w-max mx-auto'>
-          <p className='uppercase font-display text-8xl font-bold tracking-wide z-10'>
+        <div className='flex flex-col items-center w-max mx-auto py-12'>
+          <p className='uppercase font-display text-6xl py-2 md:text-8xl font-bold tracking-wide z-10'>
             Hello, world
           </p>
-          <p className='uppercase font-display text-8xl font-bold tracking-wide text-white/50'>
+          <p className='uppercase font-display text-6xl py-2 md:text-8xl font-bold tracking-wide text-white/50'>
             Hello, world
             </p>
-          <p className='uppercase font-display text-8xl font-bold tracking-wide text-white/50'>
+          <p className='uppercase font-display text-6xl py-2 md:text-8xl font-bold tracking-wide text-white/50'>
             Hello, world
           </p>
-          <p className='uppercase font-display text-8xl font-bold tracking-wide text-white/50'>
+          <p className='uppercase font-display text-6xl py-2 md:text-8xl font-bold tracking-wide text-white/50'>
             Hello, world
           </p>
 
-          <div className='flex flex-row absolute gap-24 z-0 justify-between items-center'>
-            <img src='assets/portrait-nobg.png' width={250} className='bg-seafoam/80 m-4'/>
+          <div className='flex flex-col md:flex-row absolute gap-24 lg:gap-40 z-0 items-center'>
+            <img src='assets/portrait-nobg.png' className='w-60 md:w-72 bg-seafoam/80 -mt-8 md:mt-4'/>
             <div className='max-w-80 bg-sand px-8 py-4 shadow-xl text-xl tracking-wide italic'>Creative hybrid & full-stack web developer based in Manila, Philippines.</div>
           </div>
         </div>
@@ -40,18 +40,18 @@ function App() {
         </div>
 
 
-        <div id='about' className='flex flex-row justify-center p-8 bg-powder items-center min-h-[90vh]'>
+        <div id='about' className='flex flex-col md:flex-row justify-center p-8 bg-powder md:items-center min-h-[90vh]'>
           <div className=''>
-            <p className='uppercase font-display text-8xl font-bold tracking-wide text-seafoam'>
+            <p className='uppercase font-display text-6xl md:text-8xl font-bold tracking-wide text-seafoam'>
               About
             </p>
-            <p className='uppercase font-display text-8xl font-bold tracking-wide text-seafoam'>
+            <p className='uppercase font-display text-6xl md:text-8xl font-bold tracking-wide text-seafoam'>
               About
             </p>
-            <p className='uppercase font-display text-8xl font-bold tracking-wide text-seafoam'>
+            <p className='uppercase font-display text-6xl md:text-8xl font-bold tracking-wide text-seafoam'>
               About
             </p>
-            <p className='uppercase font-display text-8xl font-bold tracking-wide text-seafoam'>
+            <p className='uppercase font-display text-6xl md:text-8xl font-bold tracking-wide text-seafoam'>
               About
             </p>
 
@@ -74,7 +74,7 @@ function App() {
               </div>
             </div>
             <div className='p-4'>
-              <p className=''>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus itaque cumque ut ea praesentium commodi deserunt, nihil unde ipsum error ducimus rem, culpa excepturi iusto. Error quidem velit mollitia maiores magnam harum vero minus officiis reprehenderit.</p>
+              <p className='w-3/5 md:w-full'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus itaque cumque ut ea praesentium commodi deserunt, nihil unde ipsum error ducimus rem, culpa excepturi iusto. Error quidem velit mollitia maiores magnam harum vero minus officiis reprehenderit.</p>
 
             </div>
           </div>
@@ -85,7 +85,7 @@ function App() {
 
         <div id='work' className="min-h-40 bg-sand py-12">
 
-            <p className='uppercase font-display text-8xl font-bold tracking-wide text-white/50 text-center'>
+            <p className='uppercase font-display text-6xl md:text-8xl font-bold tracking-wide text-white/50 text-center'>
               Selected Works
             </p>
             <DevPortfolio/>
