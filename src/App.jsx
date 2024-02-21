@@ -74,7 +74,7 @@ function App() {
               </div>
             </div>
             <div className='p-4'>
-              <p className='w-3/5 md:w-full'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus itaque cumque ut ea praesentium commodi deserunt, nihil unde ipsum error ducimus rem, culpa excepturi iusto. Error quidem velit mollitia maiores magnam harum vero minus officiis reprehenderit.</p>
+              <p className='w-3/5 md:w-full'>Paola is a career-shifter on the marketing-to-developer pipeline. She's pivoted from making enticing and eloquent content to making interactive and beautiful websites. Her stack is currently focused on ReactJS, TailwindCSS, MongoDB, NodeJS, and ExpressJS.</p>
 
             </div>
           </div>
