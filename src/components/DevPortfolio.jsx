@@ -26,7 +26,7 @@ const DevPortfolio = () => {
         "MongoDB",
         "Vercel"
       ],
-      link: "https://makolta.vercel.com",
+      link: "https://makolta.vercel.app",
     },
     {
       image: 'assets/tarot-app.png',
