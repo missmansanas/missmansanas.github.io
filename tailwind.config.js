@@ -1,22 +1,24 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{html,js}"],
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
-      cursor: {
-        'galaxy': `url('./assets/cursor.cur'), pointer`,
+      colors: {
+        'sand': 'rgb(232,221,203)',
+        'sunshine': 'rgb(238,203,115)',
+        'seafoam': 'rgb(180,212,206)',
+        'sienna': 'rgb(210,92,52)',
+        'azure': 'rgb(56,107,172)',
+        'powder': 'rgb(209,222,231)'
+      },
+      fontFamily: {
+        'display': ['Milchella']
       }
     },
   },
-  plugins: [require("daisyui")],
-  daisyui: {
-    themes: [
-      "autumn",
-      "fantasy",
-      "lofi",
-      "black",
-      "dracula",
-    ]
-  }
+  plugins: [],
 }
 
