@@ -4,10 +4,10 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const PortfolioItem = ({title, imageUrl, description, tags, link}) => {
   return (
-    <div className='bg-zinc-100 py-4 px-8 flex flex-col gap-4 rounded'>
+    <div className='max-w-[580px] bg-zinc-100 py-4 px-8 flex flex-col gap-4 rounded-md'>
       <motion.img 
         src={imageUrl}
-        className='rounded opacity-70'
+        className='rounded opacity-70 object-contain'
         alt={title}
         initial={{ opacity: "70%" }}
         whileHover={{ opacity: 100 }}

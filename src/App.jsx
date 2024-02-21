@@ -73,8 +73,21 @@ function App() {
                 <CloseIcon fontSize='sm' color='disabled'/>
               </div>
             </div>
-            <div className='p-4'>
-              <p className='w-3/5 md:w-full'>Paola is a career-shifter on the marketing-to-developer pipeline. She's pivoted from making enticing and eloquent content to making interactive and beautiful websites. Her stack is currently focused on ReactJS, TailwindCSS, MongoDB, NodeJS, and ExpressJS.</p>
+            <div className='flex flex-col gap-4 p-4 w-3/5 md:w-full'>
+              <div className="flex flex-row gap-4 items-center">
+                <img src='assets/portrait.png' className='w-24 rounded-full aspect-square object-cover border-4 border-seafoam p-1'/>
+                <div className='flex flex-col gap-1'>
+                  <h2 className='text-xl font-bold flex gap-2 items-center'>Paola N. <span className='font-light text-sm'>(she/her)</span></h2>
+                  <p className='text-sm font-light'>Metro Manila, Philippines</p>
+                  <p className="">developer / creative / learner</p>
+                </div>
+
+              </div>
+              <div className='flex flex-col px-2 gap-2'>
+                <p>I'm a career-shifter on the marketing-to-developer pipeline. I've pivoted from making enticing and eloquent content to making interactive and beautiful websites.</p>
+                <p>My stack is currently focused on ReactJS, TailwindCSS, MongoDB, NodeJS, and ExpressJS.</p>
+
+              </div>
 
             </div>
           </div>
