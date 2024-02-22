@@ -7,12 +7,13 @@ import CloseIcon from '@mui/icons-material/Close';
 import ReorderIcon from '@mui/icons-material/Reorder';
 import MinimizeIcon from '@mui/icons-material/Minimize';
 import DevPortfolio from './components/DevPortfolio';
+import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 
 function App() {
 
   return (
     <div 
-      className='bg-sand min-h-screen flex gap-4 justify-start flex-col'
+      className='bg-sand min-h-screen max-w-screen overflow-x-hidden box-border mx-0 flex gap-4 justify-start flex-col'
     >
       <Navbar/>
       <main className=''>
@@ -37,6 +38,10 @@ function App() {
         </div>
 
         <div className='h-36 bg-black py-12'>
+          <ul className="hidden md:flex md:flex-row text-sand gap-12 justify-center items-center p-0 m-0 font-display tracking-widest font-bold text-xl text-center uppercase h-full">
+              <li><a href='https://linkedin.com/in/paola-nocom'>linkedin.com/in/paola-nocom</a></li>
+              <li><a href='https://github.com/missmansanas'>github.com/missmansanas</a></li>
+          </ul>
         </div>
 
 
@@ -56,7 +61,7 @@ function App() {
             </p>
 
           </div>
-          <div className='w-[580px] bg-zinc-100 h-96 rounded-md'>
+          <div className='w-[580px] bg-zinc-100 h-max rounded-md'>
             <div className='p-2 bg-stone-300 rounded-tl-md rounded-tr-md flex flex-row justify-between items-center'>
               <div className='flex flex-row gap-2 items-center'>
                 <ArrowBackIcon fontSize='sm' color='disabled'/>
@@ -73,7 +78,7 @@ function App() {
                 <CloseIcon fontSize='sm' color='disabled'/>
               </div>
             </div>
-            <div className='flex flex-col gap-4 p-4 w-3/5 md:w-full'>
+            <div className='flex flex-col gap-4 pl-4 md:px-8 py-12 w-3/5 md:w-full'>
               <div className="flex flex-row gap-4 items-center">
                 <img src='assets/portrait.png' className='w-24 rounded-full aspect-square object-cover border-4 border-seafoam p-1'/>
                 <div className='flex flex-col gap-1'>
@@ -84,8 +89,9 @@ function App() {
 
               </div>
               <div className='flex flex-col px-2 gap-2'>
+                <p className='flex flex-row gap-2 my-2 items-center'><CheckCircleOutlineIcon className='text-zinc-700'/>Currently open to opportunities</p>
                 <p>I'm a career-shifter on the marketing-to-developer pipeline. I've pivoted from making enticing and eloquent content to making interactive and beautiful websites.</p>
-                <p>My stack is currently focused on ReactJS, TailwindCSS, MongoDB, NodeJS, and ExpressJS.</p>
+                <p>My stack is currently focused on ReactJS, TailwindCSS, MongoDB, NodeJS, and ExpressJS. I'm also exploring PHP, WordPress and UI/UX on the side.</p>
 
               </div>
 
@@ -93,7 +99,11 @@ function App() {
           </div>
         </div>
 
-        <div className='h-20 bg-black py-12'>
+        <div className='h-36 bg-black py-12'>
+          <ul className="md:hidden flex flex-col text-sand h-full place-content-center p-0 m-0 font-display tracking-widest font-bold text-md text-center uppercase">
+              <li><a href='https://linkedin.com/in/paola-nocom'>linkedin.com/in/paola-nocom</a></li>
+              <li><a href='https://github.com/missmansanas'>github.com/missmansanas</a></li>
+          </ul>
         </div>
 
         <div id='work' className="min-h-40 bg-sand py-12">
