@@ -8,6 +8,7 @@ import ReorderIcon from '@mui/icons-material/Reorder';
 import MinimizeIcon from '@mui/icons-material/Minimize';
 import DevPortfolio from './components/DevPortfolio';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
+import { Link } from 'react-router-dom';
 
 function App() {
 
@@ -16,7 +17,11 @@ function App() {
       className='bg-sand min-h-screen max-w-screen overflow-x-hidden box-border mx-0 flex gap-4 justify-start flex-col'
     >
       <Navbar/>
-      <main className=''>
+      <main style={{
+        backgroundSize: '40px 40px',
+        backgroundImage: 'linear-gradient(to right, #faf7f299 1px, transparent 1px), linear-gradient(to bottom, #faf7f299 1px, transparent 1px), radial-gradient(circle, #faf7f299 1px, rgba(0, 0, 0, 0) 1px)',
+        backgroundAttachment: 'fixed'
+      }}>
         <div className='flex flex-col items-center w-max mx-auto py-12'>
           <p className='uppercase font-display text-6xl py-2 md:text-8xl font-bold tracking-wide z-10'>
             Hello, world
@@ -32,7 +37,7 @@ function App() {
           </p>
 
           <div className='flex flex-col md:flex-row absolute gap-24 lg:gap-40 z-0 items-center'>
-            <img src='assets/portrait-nobg.png' className='w-60 md:w-72 bg-seafoam/80 -mt-8 md:mt-4'/>
+            <img src='assets/undraw_developer_nobg.png' className='w-60 md:w-[450px]  -mt-8 md:mt-4'/>
             <div className='max-w-80 bg-sand px-8 py-4 shadow-xl text-xl tracking-wide italic'>Creative hybrid & full-stack web developer based in Manila, Philippines.</div>
           </div>
         </div>
@@ -111,7 +116,10 @@ function App() {
             <p className='uppercase font-display text-6xl md:text-8xl font-bold tracking-wide text-white/50 text-center'>
               Selected Works
             </p>
-            <DevPortfolio/>
+            <div className='mx-auto w-max bg-seafoam rounded-lg shadow-lg hover:border-2 hover:shadow-inner duration-300 px-6 py-3 my-6 text-xl'>
+              <a href="https://paolaportfolio.vercel.app/" target='_blank' rel='nofollow noreferrer'>Go to new portfolio site →</a>
+
+            </div>
         </div>
 
       </main>
